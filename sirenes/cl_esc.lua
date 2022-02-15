@@ -15,7 +15,6 @@ AddEventHandler("gyro:setSirenState_c", function(sender, newstate,dict_veh,liste
                 local veh = GetVehiclePedIsUsing(ped_s)
                 if getSirenState(veh) == 1 then
                     setSirenState(veh, 0,dict_veh,liste_vehicule)
-
                 else
                     setSirenState(veh, newstate,dict_veh,liste_vehicule)
                 end
@@ -104,12 +103,13 @@ AddEventHandler('gyro:off', function()
     end
   end)
 Citizen.CreateThread(function()
-    while(true) do
+    local is_ui_enable = Config.UI
+    while(is_ui_enable == true) do
         if(gyrophare) then
             SendNUIMessage({
                 type = "gyro",
                 value = 2
-              })
+            })
             if(sirene) then
             SendNUIMessage({
                 type = "siren",

@@ -1,4 +1,5 @@
 Config = {}
+Config.UI = true
 Config.Vehicules = {
     {name = 'ambulance', sirene = 'VEHICLES_HORNS_AMBULANCE_WARNING'},
     {name = 'epan', sirene = 'VEHICLES_HORNS_SIREN_2'},
@@ -15,10 +16,6 @@ Config.Vehicules = {
     {name = 'alpine', sirene = 'VEHICLES_HORNS_POLICE_WARNING'},
 }
 --[[
-    name correspond au nom de spawn du véhicule et sirene correspond au nom de code de la sirène
-
-    Configuration pour le pack de sirène du serveur de Fratnerity et de FratLite, dispo ici : https://www.youtube.com/watch?v=jssIQD14u2g
-
     VEHICLES_HORNS_AMBULANCE_WARNING --> SAMU
     VEHICLES_HORNS_POLICE_WARNING --> Gendarmerie Nationale
     VEHICLES_HORNS_SIREN_1 --> Police Nationale
