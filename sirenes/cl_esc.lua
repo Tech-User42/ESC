@@ -104,6 +104,9 @@ AddEventHandler('gyro:off', function()
   end)
 Citizen.CreateThread(function()
     local is_ui_enable = Config.UI
+    if not is_ui_enable then
+        TriggerEvent("gyro:off")
+    end
     while(is_ui_enable == true) do
         if(gyrophare) then
             SendNUIMessage({
@@ -185,8 +188,10 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
         local veh = GetVehiclePedIsUsing(PlayerPedId())
         local entit = GetEntityModel(veh)
-        if _set[entit] then 
-            TriggerEvent('gyro:on', true)
+        if _set[entit] then
+            if Config.UI then
+                TriggerEvent('gyro:on', true)
+            end
             if IsVehicleSirenOn(veh) then
                 gyrophare = true
                 DisableControlAction(0, CONTROLS['TOGGLE'][2], true)
@@ -203,7 +208,9 @@ Citizen.CreateThread(function()
                 gyrophare = false
             end
         else
-            TriggerEvent('gyro:off', true)
+            if Config.UI then
+                TriggerEvent('gyro:off', true)
+            end
         end
     end
 end)
