@@ -23,7 +23,7 @@ Config.Vehicules = {
 }
 ```
 
-## Voici une liste des sirènes du jeu, il peut y avoir des variations en fonction du pack de son que vous utilisez, le mien est celui du serveur RP `FRaternity` [dispo ici](https://www.youtube.com/watch?v=jssIQD14u2g)
+## Voici une liste des sirènes du jeu, il peut y avoir des variations en fonction du pack de son que vous utilisez
 
 Shema :
 Hash à mettre dans le champ `sirene` --> Correspondance de sirène --> Nom du fichier dans le `RESIDENT.RPF`
