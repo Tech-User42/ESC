@@ -1,0 +1,28 @@
+/* This applies to all elements (bad practice) */
+* {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This css centers at the middle of the screen */
+div {
+	padding: 10px;
+	text-shadow: 2px 2px 5px #424242;
+    position: absolute;
+    color: rgb(241, 235, 235);
+    bottom: 25%;
+    right: 20px;
+    font-size: 45px;
+	text-align: center;
+	background-color: #272727 ;
+	border-radius: 25px;
+	border: 2px solid #dad9d9 ;
+	opacity: 0 ;
+	transition: opacity 0.6s linear;
+}
+.show {
+	opacity: 1 ;
+  }
+.small {
+	font-size: 25px;
+}
