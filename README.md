@@ -46,6 +46,9 @@ RESIDENT_VEHICLES_SIREN_QUICK_01 --> Sirène Nom de fichier --> SIREN_QUICK_01
 RESIDENT_VEHICLES_SIREN_QUICK_02 --> Sirène Nom de fichier --> SIREN_QUICK_02 
 RESIDENT_VEHICLES_SIREN_QUICK_03 --> Sirène GN Nom de fichier --> SIREN_QUICK_03
 
+sirens_slow_dir6 --> Sirène Granger Principale --> SIREN_WAIL_04
+fast_9oghrv3 --> Sirène Granger Secondaire --> SIREN_QUICK_04
+
 RESIDENT_VEHICLES_SIREN_FIRETRUCK_WAIL_01 --> Sirène Sapeurs  Nom de fichier --> SIREN_FIRETRUCK_WAIL_01
 RESIDENT_VEHICLES_SIREN_FIRETRUCK_QUICK_01 --> Sirène Nom de fichier --> SIREN_FIRETRUCK_QUICK_01
 ```
